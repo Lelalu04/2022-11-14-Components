@@ -216,4 +216,94 @@ a {
   /* font-weight: revert; */
   font-size: initial;
   padding: 2;
+}
+
+.footer-container {
+  background-color: black;
+  padding: 140px 0 135px;
+  overflow: hidden;
+}
+.footer-container .footer-logo {
+  padding-bottom: 100px;
+}
+.footer-container .footer-widgets {
+  display: grid;
+  grid-template-columns: 300px 434px auto;
+  grid-template-rows: 1fr;
+  grid-template-areas: "footer-widget-left footer-widget-center footer-widget-right";
+}
+.footer-container .footer-widgets .footer-widget-left {
+  grid-area: footer-widget-left;
+  width: 300px;
+}
+.footer-container .footer-widgets .footer-widget-left ul.meniu {
+  padding-left: 0px;
+}
+.footer-container .footer-widgets .footer-widget-left ul.meniu .meniu-choice {
+  padding-bottom: 25px;
+}
+.footer-container .footer-widgets .footer-widget-center {
+  grid-area: footer-widget-center;
+}
+.footer-container .footer-widgets .footer-widget-center h2 {
+  color: white;
+  font-size: 15px;
+  margin-top: 0;
+}
+.footer-container .footer-widgets .footer-widget-center ul.meniu {
+  padding-left: 0px;
+}
+.footer-container .footer-widgets .footer-widget-center ul.meniu .meniu-choice {
+  padding-bottom: 25px;
+}
+.footer-container .footer-widgets .footer-widget-right {
+  grid-area: footer-widget-right;
+}
+.footer-container .footer-widgets .footer-widget-right .widget ul {
+  display: flex;
+  margin-top: 0;
+  justify-content: center;
+}
+.footer-container .footer-widgets .footer-widget-right .widget ul li {
+  display: inline-block;
+  margin-right: 18px;
+}
+.footer-container .footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 260px;
+  width: 100%;
+}
+.footer-container .footer-info .privacy-policy {
+  margin-left: 205px;
+}
+.footer-container .footer-info .copyright a {
+  color: white;
+}
+.footer-container .footer-certificates {
+  margin-top: 15px;
+}
+.footer-container .footer-decoration {
+  position: relative;
+}
+.footer-container .footer-decoration img {
+  position: absolute;
+  bottom: -200px;
+  right: -65px;
+  width: 460px;
+}
+
+a,
+.copyright {
+  color: #929497;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover path {
+  fill: white;
 }/*# sourceMappingURL=style.css.map */

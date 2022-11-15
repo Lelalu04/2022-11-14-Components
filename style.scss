@@ -286,3 +286,109 @@ a {
         }
     }
 }
+
+.footer-container {
+    background-color: black;
+    padding: 140px 0 135px;
+    overflow: hidden;
+
+        .footer-logo {
+            padding-bottom: 100px;
+        }
+
+        .footer-widgets {
+            display: grid;
+            grid-template-columns: 300px 434px auto;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "footer-widget-left footer-widget-center footer-widget-right";
+
+            .footer-widget-left {
+                grid-area: footer-widget-left;
+                width: 300px;
+
+                ul.meniu {
+                    padding-left: 0px;
+
+                    .meniu-choice {
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+
+            .footer-widget-center {
+                grid-area: footer-widget-center;
+
+                h2 {
+                    color: white;
+                    font-size: 15px;
+                    margin-top: 0;
+                }
+
+                ul.meniu {
+                    padding-left: 0px;
+
+                    .meniu-choice {
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+
+            .footer-widget-right {
+                grid-area: footer-widget-right;
+                .widget ul {
+                    display: flex;
+                    margin-top: 0;
+                    justify-content: center;
+                    li {
+                        display: inline-block;
+                        margin-right: 18px;
+                    }
+                }
+            }
+        }
+
+        .footer-info {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 260px;
+            width: 100%;
+            .privacy-policy {
+                margin-left: 205px;
+            }
+            .copyright a {
+                color: white;
+            }
+        }
+        .footer-certificates {
+            margin-top: 15px;
+        }
+
+    
+    .footer-decoration  {
+        position: relative;
+        img {
+           position: absolute;
+           bottom: -200px;
+           right: -65px;
+           width: 460px;
+       }
+    }
+
+}
+
+a,
+.copyright {
+    color: #929497;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover path {
+    fill: white;
+}
